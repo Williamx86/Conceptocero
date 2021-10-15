@@ -15,6 +15,8 @@ nav {
     justify-content: center;
     background: #E0E0E0;
     width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 
 .menu_principal {
@@ -64,14 +66,14 @@ nav {
 }
 
 .sociales {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
     object-fit: contain;
 }
 
 .full-screen {
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -105,4 +107,500 @@ nav {
     font-weight: 100;
     letter-spacing: 1rem;
     font-size: 1.5rem;
+}
+
+.btn_movil {
+    display: none;
+}
+
+.menu_movil {
+    background: #E0E0E0;
+    height: 89vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_movil a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Muli';
+    margin: 1.5rem 0;
+}
+
+.oculto {
+    display: none;
+}
+
+.seccionuno {
+    padding: 6rem 0;
+}
+
+.banner_seccion {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.bannerdos_seccion {
+    padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.banner_seccion span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.info_seccion {
+    padding: 2rem 0;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.info_seccion_dos {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.raya_gruesa {
+    width: 100px;
+    object-fit: contain;
+}
+
+.raya_blanca {
+    margin-top: 4rem;
+    width: 125px;
+    object-fit: contain;
+}
+
+.botonera {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.botonera a {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 2rem;
+}
+
+.botonera a img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.slid img {
+    display: block;
+    height: 460px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.secciondos {
+    color: #fff;
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+}
+
+.datos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.datos_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.espacio {
+    margin-left: 5rem;
+}
+
+.numero {
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: right;
+}
+
+.descripcion {
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.centrados {
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.secciontres {
+    padding: 5rem 0;
+}
+
+.san_gabriel {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.san_gabriel div {
+    padding: 3rem;
+}
+
+.san_gabriel h2 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.san_gabriel p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.centro {
+    display: none;
+}
+
+.san {
+    display: none;
+}
+
+.texto_final {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto_final img {
+    width: 70%;
+    height: auto;
+}
+
+.texto_final a {
+    margin-top: 1.5rem;
+    color: #000;
+    border: 1px solid #000;
+    background: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.texto_final a:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.texto_final hr {
+    display: none;
+}
+
+.foot {
+    padding: 5rem 0;
+    background: #1B1B1B;
+    color: #fff;
+}
+
+.img_logo {
+    width: 70px;
+}
+
+.texto-footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.botonera_dos {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botonera_dos p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 1rem;
+}
+
+.botonera_dos a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 3rem;
+}
+
+.botonera_dos a img {
+    width: 40px;
+    margin-right: 2rem;
+}
+
+.derechos {
+    padding-top: 10rem;
+    width: 100%;
+}
+
+.derechos img {
+    width: 100%;
+}
+
+.info_derechos {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_derechos p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.info_derechos a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.copy{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .copy {
+        background: #292727;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    .copy span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    .opciones a {
+        display: none;
+    }
+
+    .btn_movil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn_movil img {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+        cursor: pointer;
+    }
+
+    .banner_p {
+        font-size: 1.5rem;
+    }
+
+    .banner_s {
+        font-size: 1rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .slid img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.5rem;
+    }
+
+    .info_seccion {
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    .botonera {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botonera a {
+        margin-bottom: 1.5rem;
+    }
+
+    .botonera_dos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botonera_dos a {
+        margin-bottom: 1.5rem;
+        display: none;
+    }
+
+    .botonera_dos p {
+        padding: 1rem;
+    }
+
+    .raya_blanca {
+        display: none;
+    }
+
+    .info_seccion_dos {
+        padding: 2rem 0;
+    }
+
+    .datos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .espacio {
+        margin-left: 0rem;
+    }
+
+    .numero {
+        margin: 0;
+        font-size: 3rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .descripcion {
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+
+    .secciondos {
+        padding: 3rem 0;
+    }
+
+    .san_gabriel div {
+        display: none;
+    }
+
+    .san_gabriel {
+        width: 100%;
+        height: 300px;
+    }
+
+    .texto_final img {
+        display: none;
+    }
+
+    .texto_final hr {
+        display: block;
+        width: 100%;
+    }
+
+    .centro {
+        display: block;
+        padding-top: 2rem;
+        color: #000;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .san {
+        display: block;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .derechos img {
+        height: 20px;
+        object-fit: contain;
+    }
+
+    .derechos {
+        padding-top: 0rem;
+        width: 100%;
+    }
+
+    .info_derechos p {
+        display: none;
+    }
+
+    .info_derechos {
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .img_logo {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70px;
+    }
+
+    .texto-footer {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 1.5rem;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
 }
