@@ -198,6 +198,34 @@ nav {
 .botonera a img {
     width: 40px;
     margin-right: 1rem;
+    transition: .4s;
+}
+
+.botonera a:hover img {
+    transform: rotate(45deg);
+}
+
+.botonera_tres {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.botonera_tres a {
+    display: flex;
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 1rem;
+}
+
+.botonera_tres a img {
+    width: 40px;
+    margin-right: 1rem;
+    transition: .4s;
+}
+
+.botonera_tres a:hover img {
+    transform: rotate(45deg);
 }
 
 .slid img {
@@ -375,6 +403,11 @@ nav {
 .botonera_dos a img {
     width: 40px;
     margin-right: 2rem;
+    transition: .4s;
+}
+
+.botonera_dos a:hover img {
+    transform: rotate(45deg);
 }
 
 .derechos {
@@ -430,6 +463,16 @@ nav {
     background-attachment: fixed;
 }
 
+.banner_paginas_cuatro {
+    /*Cambiar en mobile*/
+    padding: 18rem 0 12rem 6rem;
+    background-image: url(../img/portafolio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .banner_paginas_dos {
     /*Cambiar en mobile*/
     padding: 18rem 0 12rem 6rem;
@@ -464,6 +507,10 @@ nav {
 
 .conceptocero_dos {
     padding: 0 0 7rem 0;
+}
+
+.conceptocero_tres {
+    padding: 4rem 0 7rem 0;
 }
 
 .titulo_seccion_uno {
@@ -825,6 +872,16 @@ nav {
         background-attachment: fixed;
     }
 
+    .banner_paginas_cuatro {
+        /*Cambiar en mobile*/
+        padding: 16rem 0 10rem 2rem;
+        background-image: url(../img/portafolio.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
     .banner_paginas_tres {
         /*Cambiar en mobile*/
         padding: 16rem 0 10rem 0;
@@ -928,6 +985,15 @@ nav {
 
     .botonera a {
         margin-bottom: 1.5rem;
+    }
+
+    .botonera_tres {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botonera_tres a {
+        margin-bottom: 1rem;
     }
 
     .botonera_dos {
