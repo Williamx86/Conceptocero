@@ -208,9 +208,11 @@ nav {
 .botonera_tres {
     display: flex;
     padding-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.botonera_tres a {
+.botonera_tres .enlace {
+    cursor: pointer;
     display: flex;
     color: #000;
     text-decoration: none;
@@ -218,13 +220,13 @@ nav {
     margin-right: 1rem;
 }
 
-.botonera_tres a img {
+.botonera_tres .enlace img {
     width: 40px;
     margin-right: 1rem;
     transition: .4s;
 }
 
-.botonera_tres a:hover img {
+.botonera_tres .enlace:hover img {
     transform: rotate(45deg);
 }
 
@@ -743,6 +745,68 @@ nav {
     transform: scale(1.2);
 }
 
+.div_proyectos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.imagenes_proyectos{
+    
+    width: 300px;
+    height: 200px;
+    margin: 0.1rem;
+    position: relative;
+    z-index: 1; 
+}
+
+.imagenes_proyectos img{   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2; 
+}
+
+.imagenes_proyectos p{   
+    position: absolute;
+    margin: 0;
+    bottom: 25px;
+    left: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: none;
+    color: #fff;
+    z-index: 3; 
+}
+
+.gradiente{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    z-index: 3; 
+    transition: 0.2s;
+}
+
+.imagenes_proyectos:hover .gradiente{   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .65) 100%);
+    z-index: 3; 
+}
+
+.imagenes_proyectos:hover p{   
+    display: block;
+}
+
 @media only screen and (max-width: 815px) {
 
     .nuestros_clientes {
@@ -829,6 +893,18 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .div_proyectos{
+        align-items: unset;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .imagenes_proyectos{
+        width: 100%;
+        height: 225px;
+        margin: 0.1rem;
+    }
 
     .parhers {
         display: flex;
@@ -992,7 +1068,7 @@ nav {
         flex-direction: column;
     }
 
-    .botonera_tres a {
+    .botonera_tres .enlace {
         margin-bottom: 1rem;
     }
 
